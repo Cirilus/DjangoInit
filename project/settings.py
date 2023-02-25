@@ -7,7 +7,6 @@ from django.core.exceptions import ImproperlyConfigured
 root = environ.Path(__file__) - 3
 env = environ.Env()
 environ.Env.read_env()
-print(root.path('public/'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
