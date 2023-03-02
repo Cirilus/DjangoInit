@@ -14,12 +14,10 @@ RUN useradd -rms /bin/bash project && chmod 777 /opt /run
 
 WORKDIR /project
 
-RUN mkdir /project/static && mkdir /project/media && chown -R project:project /project && chmod 755 /project
-
+RUN mkdir -p /project/static && mkdir -p /project/media && chown -R project:project /project && chmod 777 /project
 COPY --chown=project:project . .
 
 RUN pip install -r requirements.txt
-
 USER project
 
-CMD ["gunicorn","-b","0.0.0.0:8080","project.wsgi:application"]
+CMD ["gunicorn","-b","0.0.0.0:8000","project.wsgi:application"]
