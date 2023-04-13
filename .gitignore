@@ -1,4 +1,4 @@
-db.sqlite3
+db.*
 /**/migrations/
 /**/__pycache__/
 .idea/
