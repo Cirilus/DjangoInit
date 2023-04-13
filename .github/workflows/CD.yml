@@ -1,18 +1,17 @@
 name: Django CD
 
-on: 
+on:
   push:
-    branches:
-      -master
+    branches: 
+      - master
   pull_request:
     branches: 
-      -master
+      - master
+
 jobs:
   deploy:
   
     runs-on: ubuntu-latest
-    
-    needs: tests
     
     steps:
     - name: Deploy Project
