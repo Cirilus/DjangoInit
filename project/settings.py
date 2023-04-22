@@ -10,7 +10,7 @@ environ.Env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY', "dafic[124i02gkcao[g45[]cf")
 
 DEBUG = env.bool('DEBUG', default=True)
 
