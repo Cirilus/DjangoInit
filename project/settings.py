@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'drf_spectacular_sidecar',
     'rest_framework',
 
-
+    'Authencation.apps.AuthencationConfig',
 
 ]
 
