@@ -14,7 +14,7 @@ SECRET_KEY = env.str('SECRET_KEY', "dafic[124i02gkcao[g45[]cf")
 
 DEBUG = env.bool('DEBUG', default=True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 INSTALLED_APPS = [
